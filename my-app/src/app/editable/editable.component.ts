@@ -10,5 +10,6 @@ export class EditableComponent {
   parsedContent = "";
   updateNode(update: HTMLParagraphElement){
     this.parsedContent = marked.parse(update.innerText);
+    // this.parsedContent = update.innerText;
   }
 }
